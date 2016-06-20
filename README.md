@@ -47,10 +47,15 @@ The same goes for Channel 2 (Rows 3 and 4) and Channel 3 (Rows 5 and 6)
 Example:
 
 X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Original 16-step pattern (N = 16, K = 1)
+
 0 X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 1
+
 0 0 X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 2
+
 0 0 0 X 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 3
+
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 X - Offset of 15
+
 X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 16
 
 
