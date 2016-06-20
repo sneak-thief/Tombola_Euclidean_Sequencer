@@ -69,11 +69,13 @@ Sneak-Thief's design notes
 - Created schematic with input/output protection: http://sneak-thief.com/modular/tombolas-euclidean-0.3.png
 - Added reset gate input
 - Added Offset control 
+- Added 10K pulldown resistor to switch outputs
+- Changed 15K resistors to 10K
+- Added more error checking for eeprom reads / values to reduce risk of crashes 
 
  To do 
-- Error checking for eeprom reads / values to reduce risk of crashes 
 - Add CV control of N, K and Offset using analog pins 5,6,7 
-
+- OR Add gate control of two pairs of N, K or Offset using analog pins 4,5,6,7 
 
 
 Tombola's original design notes
