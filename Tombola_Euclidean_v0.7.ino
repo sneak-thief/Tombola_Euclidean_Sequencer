@@ -141,7 +141,7 @@ Hardware notes:
 
 
 // Debug Flag
-#define debug 2 // 0 = normal 1 =  (internal clock) 2= SerialDump
+#define debug 0 // 0= normal  1= Internal Clock  2= Internal Clock and SerialDump
 
 
 // Encoder Pins for the Encoder.h library
