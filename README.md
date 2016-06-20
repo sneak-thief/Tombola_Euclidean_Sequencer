@@ -1,9 +1,12 @@
 # Tombola_Euclidean_Sequencer
-Updated version of Tombola's modular euclidean sequencer
+
+Updated version of Tombola's modular euclidean sequencer:
+
+https://www.muffwiggler.com/forum/viewtopic.php?t=45485&start=all&postdays=0&postorder=asc
 
 
 
-/* Instructions:
+Instructions:
 
 When the rhythms are playing, the display flips between page 1 (steps 1-8) and page 2 (steps 9-16).
 
@@ -59,7 +62,7 @@ X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Original 16-step pattern (N = 16, K = 1)
 X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 16
 
 
->>> Sneak-Thief's design notes <<<
+Sneak-Thief's design notes
 
 - Added Encoder library to stabilize encoder use
 - Cleaned up code a bit
@@ -73,7 +76,7 @@ X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 16
 
 
 
->>> Tombola's original design notes <<<
+Tombola's original design notes
 
  To do 
 - Error checking for eeprom reads / values to reduce risk of crashes 
@@ -143,5 +146,5 @@ Hardware notes:
  +5v -- 10k -- switch -- 10k -- switch -- 10k -- switch -- 10k -- GND 
  Other ends of switches going to Analog in 0 and also 10k to GND 
  
- */
+ 
 
