@@ -144,7 +144,7 @@ Hardware notes:
 
 
 // Debug Flag
-#define debug 2 // 0= normal  1= Internal Clock  2= Internal Clock and SerialDump
+int debug=2; // 0= normal  1= Internal Clock  2= Internal Clock and SerialDump
 
 
 // Encoder Pins for the Encoder.h library
@@ -392,7 +392,7 @@ What's in the loop:
   // ANALOG PULSE TRIGGER 
   newpulse=map(analogRead(pulseinput),0,1024,0,3); // Pulse input 
   if (newpulse>oldpulse){
-    #define debug 0                    // turn off internal clock if external clock received
+    debug = 0;                    // turn off internal clock if external clock received
     Sync();
   }
   oldpulse = newpulse;
@@ -892,9 +892,3 @@ void sleepanim(){
   }
 
 }  
-
-
-
-
-
-
