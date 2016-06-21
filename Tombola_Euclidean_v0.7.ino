@@ -4,7 +4,7 @@
 
 /* Instructions:
 
--- Note: when first turned on, it automatically run from a fixed speed internal clock until it receives 
+-- Note: when first turned on, it runs automatically from a fixed speed internal clock until it receives 
 a pulse at the clock input, after that it only triggers externally -- 
 
 
