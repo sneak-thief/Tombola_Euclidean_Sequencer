@@ -60,10 +60,13 @@ X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 16
 - Created schematic with input/output protection: http://sneak-thief.com/modular/tombolas-euclidean-0.3.png
 - Added reset gate input
 - Added Offset control 
+- Added 10K pulldown resistor to switch outputs
+- Changed 15K resistors to 10K
+- Added more error checking for eeprom reads / values to reduce risk of crashes
 
- To do 
-- Error checking for eeprom reads / values to reduce risk of crashes 
-- Add CV control of N, K and Offset using analog pins 5,6,7 
+To do
+- Add CV control of N, K and Offset using analog pins 5,6,7
+- OR Add gate control of two pairs of N, K or Offset using analog pins 4,5,6,7 
 
 
 
@@ -288,7 +291,7 @@ void setup() {
   for (int a=0;a<channels;a++){
     beat_holder[a] = euclid(channelbeats[a][0],channelbeats[a][1],channelbeats[a][3]);
   }
-
+Sync();
 }
 
 
@@ -325,7 +328,7 @@ What's in the loop:
       Serial.print (kk);
       Serial.print (" offset =");
       Serial.print (oo);
-            Serial.print (" channel pot=");
+            Serial.print (" channel switch analog value=");
       Serial.println (channel_switch_read);
 
       
