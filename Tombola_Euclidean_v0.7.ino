@@ -4,6 +4,10 @@
 
 /* Instructions:
 
+-- Note: when first turned on, it automatically run from a fixed speed internal clock until it receives 
+a pulse at the clock input, after that it only triggers externally -- 
+
+
 When the rhythms are playing, the display flips between page 1 (steps 1-8) and page 2 (steps 9-16).
 
 Here's what the display shows...
