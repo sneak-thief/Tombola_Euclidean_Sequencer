@@ -5,6 +5,8 @@ Updated version of Tombola's modular euclidean sequencer:
 https://www.muffwiggler.com/forum/viewtopic.php?t=45485&start=all&postdays=0&postorder=asc
 
 
+- Note: when first turned on, it automatically run from a fixed speed internal clock until it receives a pulse at the clock input, after that it only triggers externally - 
+
 
 Instructions:
 
