@@ -61,7 +61,7 @@ X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 - Offset of 16
 
 - Added Encoder library to stabilize encoder use
 - Cleaned up code a bit
-- Created schematic with input/output protection: http://sneak-thief.com/modular/tombolas-euclidean-0.3.png
+- Created schematic with input/output protection: http://sneak-thief.com/modular/tombolas-euclidean-0.7.png
 - Added reset gate input
 - Added Offset control 
 - Added 10K pulldown resistor to switch outputs
