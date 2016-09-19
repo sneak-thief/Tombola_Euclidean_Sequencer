@@ -414,7 +414,7 @@ void loop()
 		};
 
 		channelbeats[active_channel][1] = channelbeats[active_channel][1] + kknob; // update with encoder reading
-		//EEPROM.write((active_channel * 2) + 2, channelbeats[active_channel][1]); // write settings to 2/4/6 eproms
+		EEPROM.write((active_channel * 2) + 2, channelbeats[active_channel][1]); // write settings to 2/4/6 eproms
 		last_read = millis();
 		changes = 1; // K change = 1
 	}
@@ -449,7 +449,7 @@ void loop()
 		kk = channelbeats[active_channel][1];
 		nn = channelbeats[active_channel][0];  // update nn for ease of coding
 		Serial.println(nknob);
-		//EEPROM.write((active_channel * 2) + 1, channelbeats[active_channel][0]); // write settings to 2/4/6 eproms
+		EEPROM.write((active_channel * 2) + 1, channelbeats[active_channel][0]); // write settings to 2/4/6 eproms
 		last_read = millis();
 		changes = 2; // n change = 2
 	}
@@ -470,7 +470,7 @@ void loop()
 		channelbeats[active_channel][3] = oo + oknob;
 		oo = channelbeats[active_channel][3];  // update oo for ease of coding
 
-		//EEPROM.write((active_channel * 2) + 1, channelbeats[active_channel][3]); // write settings to 2/4/6 eproms
+		EEPROM.write((active_channel * 2) + 1, channelbeats[active_channel][3]); // write settings to 2/4/6 eproms
 		last_read = millis();
 		changes = 3; // O change = 3
 	}
